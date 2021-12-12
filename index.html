@@ -33,22 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#research">Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#publications">Publications</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cv">CV</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item d-flex align-items-center justify-content-left">
               <div onclick="darkmode()" class="nav-link"><i class="fas fa-adjust"></i></div>
             </li>
           </ul>
-          <ul class="navbar-nav ms-md-auto">
+          <ul class="navbar-nav ms-md-auto h3">
             <li class="nav-item">
               <a target="_blank" rel="noopener" class="nav-link" href="https://www.linkedin.com/in/jmrolsson"><i class="fab fa-linkedin"></i></a>
             </li>
@@ -67,103 +58,21 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead">
+    <header class="masthead", id="header">
       <div class="container px-4 px-lg-5 h-100">
         <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
           <div class="col-lg-8 align-self-end">
             <h1 class="text-white font-weight-bold">Hello! I'm Joakim Olsson</h1>
-            <hr class="divider text-white" />
+            <hr class="divider text-light" />
           </div>
           <div class="col-lg-8 align-self-baseline">
-            <p class="text-white mb-5">I'm a postdoc in experimental particle physics at UC Irvine working on the ATLAS Experiment.
+            <p class="text-light mb-5">Particle physicist | Passionate about physics, space, machine learning, embedded systems
             </p>
-            <a class="btn btn-light" href="#research"><i class="fas fa-chevron-down"></i></a>
+            <a class="btn btn-light" id="headerBtn" href="#about"><i class="fas fa-chevron-down"></i></a>
           </div>
         </div>
       </div>
     </header>
-
-    <!-- Research -->
-    <section class="page-section bg-primary" id="research">
-      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-
-    <!-- Publications -->
-    <section class="page-section bg-primary" id="publications">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">We've got what you need!</h2>
-            <hr class="divider divider-light" />
-            <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-            <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section class="page-section bg-primary" id="cv">
-      <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">We've got what you need!</h2>
-            <hr class="divider" />
-            <p class="text-white-75 mb-4">Start Bootstrap has everything you need to get your new website up and running in no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!</p>
-            <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Contact -->
     <section class="page-section pad-top-40" id="contact">
@@ -218,13 +127,6 @@
         </div>
       </div>
     </section>
-
-
-    <!--
-      <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque laoreet placerat porttitor. Cras sit amet tortor metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec suscipit libero lectus, et rutrum dolor luctus pharetra. Aenean luctus et lacus sit amet dictum. Nam vitae ex nec sem posuere malesuada nec eget dui. Nunc elementum pretium lacus id auctor. Quisque commodo tincidunt elementum. Aenean in ullamcorper leo, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat, sapien eu euismod pulvinar, augue lacus dignissim massa, eu facilisis tellus mauris nec arcu. Aenean quis scelerisque turpis. Etiam a enim convallis, aliquet lectus non, faucibus quam. Suspendisse egestas porttitor libero.
-      </p>
-    -->
 
     <footer class="bg-light py-5">
       <div class="container px-4 px-lg-5"><div class="small text-center text-muted">&copy; 2021 - Joakim Olsson</div></div>

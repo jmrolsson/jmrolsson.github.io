@@ -3,8 +3,12 @@ function darkmode() {
   nav.classList.toggle("navbar-dark");
   nav.classList.toggle("bg-dark");
 
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  var headerBtn = document.getElementById("headerBtn");
+  headerBtn.classList.toggle("btn-dark");
+
+  var about = document.getElementById("about");
+  about.classList.toggle("bg-dark");
+  about.classList.toggle("text-white");
 
 }
 
