@@ -1,3 +1,4 @@
+
 function darkmode() {
   var nav = document.getElementById("mainNav");
   nav.classList.toggle("navbar-dark");
@@ -10,9 +11,19 @@ function darkmode() {
   about.classList.toggle("bg-dark");
   about.classList.toggle("text-white");
 
-  var resume = document.getElementById("resume");
-  resume.classList.toggle("bg-dark");
-  resume.classList.toggle("text-white");
+  var aboutTitle = document.getElementById("aboutTitle");
+  aboutTitle.classList.toggle("text-white");
+
+  var contact = document.getElementById("contact");
+  contact.classList.toggle("bg-dark");
+  contact.classList.toggle("text-white");
+
+  var contactTitle = document.getElementById("contactTitle");
+  contactTitle.classList.toggle("text-white");
+
+  var footer = document.getElementById("footer");
+  footer.classList.toggle("bg-dark");
+  footer.classList.toggle("text-white");
 
 }
 

@@ -26,9 +26,14 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" id=mainNav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id=mainNav>
       <div class="container">
         <a class="navbar-brand" href="#">Joakim Olsson</a>
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a onclick="darkmode()" class="nav-link"><i class="fas fa-adjust"></i></a >
+            </li>
+          </ul>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
           aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,27 +43,6 @@
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item d-flex align-items-center justify-content-left">
-              <div onclick="darkmode()" class="nav-link"><i class="fas fa-adjust"></i></div>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-md-auto h3">
-            <li class="nav-item">
-              <a target="_blank" rel="noopener" class="nav-link" href="https://www.linkedin.com/in/jmrolsson"><i
-                  class="fab fa-linkedin"></i></a>
-            </li>
-            <li class="nav-item">
-              <a target="_blank" rel="noopener" class="nav-link" href="https://github.com/jmrolsson"><i
-                  class="fab fa-github"></i></a>
-            </li>
-            <li class="nav-item">
-              <a target="_blank" rel="noopener" class="nav-link" href="https://twitter.com/jmrolsson"><i
-                  class="fab fa-twitter"></i></a>
-            </li>
-            <li class="nav-item">
-              <a target="_blank" rel="noopener" class="nav-link" href="https://orcid.org/0000-0003-4154-8139"><i
-                  class="fab fa-orcid"></i></a>
             </li>
           </ul>
         </div>
@@ -77,24 +61,36 @@
             <p class="text-light mb-5">Particle physicist | Passionate about physics, space, machine learning, embedded
               systems
             </p>
-            <a class="btn btn-light" id="headerBtn" href="#contact"><i class="fas fa-chevron-down"></i></a>
+            <p class="mb-5 h1">
+              <a target="_blank" rel="noopener" class="text-light" href="https://www.linkedin.com/in/jmrolsson"><i
+                  class="fab fa-linkedin"></i></a>
+              <a target="_blank" rel="noopener" class="text-light" href="https://github.com/jmrolsson"><i
+                  class="fab fa-github"></i></a>
+              <a target="_blank" rel="noopener" class="text-light" href="https://twitter.com/jmrolsson"><i
+                  class="fab fa-twitter"></i></a>
+              <a target="_blank" rel="noopener" class="text-light" href="https://orcid.org/0000-0003-4154-8139"><i
+                  class="fab fa-orcid"></i></a>
+            </p>
+            <p>
+              <a class="btn btn-light" id="headerBtn" href="#contact"><i class="fas fa-chevron-down"></i></a>
+            </p>
           </div>
         </div>
       </div>
     </header>
 
     <!-- Contact -->
-    <section class="page-section pad-top-40" id="contact">
+    <section class="page-section bg-light" id="contact">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">Contact</h2>
+            <h2 class="mt-0" id="contactTitle">Contact</h2>
             <hr class="divider"/>
             <p class=" mb-5">Feel free to reach out!</p>
           </div>
         </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-          <div class="col-lg-6">
+        <div class="row gx-4 justify-content-center mb-5">
+          <div class="col-lg-6 text-black-50">
             <form id="contactForm" data-sb-form-api-token="de4dfbf2-9861-403f-8d20-1b70ca5574a2">
               <!-- Name input-->
               <div class="form-floating mb-3">
@@ -144,7 +140,7 @@
       </div>
     </section>
 
-    <footer class="bg-light py-5">
+    <footer class="bg-light py-5" id="footer">
       <div class="container px-4 px-lg-5">
         <div class="small text-center text-muted">&copy; 2021 - Joakim Olsson</div>
       </div>
