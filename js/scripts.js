@@ -10,6 +10,10 @@ function darkmode() {
   about.classList.toggle("bg-dark");
   about.classList.toggle("text-white");
 
+  var resume = document.getElementById("resume");
+  resume.classList.toggle("bg-dark");
+  resume.classList.toggle("text-white");
+
 }
 
 window.addEventListener('DOMContentLoaded', event => {
